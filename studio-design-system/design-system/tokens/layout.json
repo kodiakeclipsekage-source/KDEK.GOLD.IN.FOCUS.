@@ -1,0 +1,7 @@
+{
+  "mobileBreakpoint":760,
+  "logo":{"desktop":{"width":"57px","height":"64.5px","headerHeight":"84.5px"},"mobile":{"width":"40px","height":"45px","headerHeight":"76px"}},
+  "spacing":{"small":"8px","grid":"12px","medium":"24px","section":"64px"},
+  "radius":"4px",
+  "minimumControlSize":"44px"
+}

@@ -1,0 +1,20 @@
+/* Full-width visual mosaic: its rows scale with the available content width. */
+.visual-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));aspect-ratio:3/4;gap:var(--studio-space-grid,12px);width:100%;max-width:none;margin:0 0 40px;padding:0;background:transparent;border:0;border-radius:var(--studio-radius,4px)}
+.visual-gallery figure{position:relative;margin:0;min-width:0;min-height:0;height:100%;align-self:stretch;border-radius:5px;overflow:hidden;background:#151515}
+.visual-gallery figure:nth-child(1){grid-column:1;grid-row:1/span 2}
+.visual-gallery figure:nth-child(2){grid-column:2;grid-row:1}
+.visual-gallery figure:nth-child(3){grid-column:2;grid-row:2}
+.visual-gallery figure:nth-child(4){grid-column:1;grid-row:3/span 2}
+.visual-gallery figure:nth-child(5){grid-column:2;grid-row:3}
+.visual-gallery figure:nth-child(6){grid-column:2;grid-row:4}
+.visual-gallery .gallery-frame{position:relative;width:100%;height:100%;aspect-ratio:auto;background:#090909;border-radius:inherit;overflow:hidden}
+.visual-gallery .gallery-frame img,.visual-gallery .gallery-frame video{display:block;width:100%;height:100%;max-height:none;object-fit:cover;object-position:50% 40%}
+.visual-gallery video{color-scheme:dark}
+.visual-gallery video:focus-visible{outline:2px solid var(--studio-color-action,#EF1632);outline-offset:-2px}
+.visual-gallery .gallery-frame video:fullscreen{object-fit:contain;object-position:center;background:#000}
+.visual-gallery figcaption{position:absolute;top:10px;left:10px;right:10px;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 9px;background:#111b;border:1px solid #ffffff20;border-radius:3px;font:var(--studio-content-weight,600) 11px/1.5 var(--studio-font-content);letter-spacing:.03em;color:#f4f4f0;pointer-events:none;opacity:0;transition:opacity .2s ease}
+.visual-gallery figcaption span{color:#b3b3af;font-size:9px}
+.visual-gallery figure:hover figcaption,.visual-gallery figure:focus-within figcaption{opacity:1}
+@media(hover:none){.visual-gallery figcaption{opacity:1}}
+@media(max-width:760px){.visual-gallery{gap:8px;margin-bottom:28px}.visual-gallery figcaption{top:6px;left:6px;right:6px;padding:4px 6px;font-size:9px;opacity:1}.visual-gallery figcaption span{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.visual-gallery figcaption{transition:none}}

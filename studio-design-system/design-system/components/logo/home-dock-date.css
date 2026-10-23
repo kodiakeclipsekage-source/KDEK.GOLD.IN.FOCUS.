@@ -1,0 +1,21 @@
+/* A transparent logo dock, with the current date revealed at Selected work. */
+.home-logo-dock,body.hero-scrolled .home-logo-dock,body.work-entered .home-logo-dock{background:transparent;backdrop-filter:none}
+.logo-date{font-size:12px;line-height:1.5;color:#aaa;white-space:nowrap;opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .3s ease,transform .3s ease,visibility .3s}
+body.work-entered .logo-date{opacity:1;visibility:visible;transform:none}
+[data-typing].is-typing{position:relative}
+.typing-layout{visibility:hidden}
+.typing-ink{position:absolute;inset:0;display:block;pointer-events:none}
+.fade-up{opacity:1}
+.motion-ready .fade-up{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+.motion-ready .fade-up.is-revealed{opacity:1;transform:none}
+@media(min-width:761px){.rail-body{min-height:0;overflow-y:auto;scrollbar-width:thin}.rail-bottom{flex-shrink:0}}
+.studio-nav{display:grid;gap:9px;margin-top:25px}
+.studio-nav>span{font-size:10px;color:#777;letter-spacing:1px}
+.studio-nav a{font-size:clamp(12px,1.1vw,16px);line-height:1.4;color:#aaa;overflow-wrap:anywhere;transition:color .2s}
+.studio-nav a:hover{color:white}
+.studio-profile{padding:50px 0;border-top:1px solid #333;scroll-margin-top:100px}
+.studio-profile .display{font-size:clamp(35px,4.6vw,82px);margin:0;overflow-wrap:anywhere}
+.studio-profile+.studio-profile{margin-top:30px}
+@media(max-width:760px){.studio-nav{grid-template-columns:1fr 1fr;margin-top:20px}.studio-nav>span{grid-column:1/-1}.studio-nav a{font-size:14px}.studio-profile{padding:30px 0}.logo-date{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.motion-ready .fade-up{opacity:1;transform:none;transition:none}.logo-date{transition:none}}
+

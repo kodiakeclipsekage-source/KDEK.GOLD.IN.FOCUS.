@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{brand:studio}} — Studio Website</title><meta name="description" content="{{brand:company}} — Minimal design & digital craft.">
+<link rel="icon" href="{{brand:favicon}}">{{design:head}}{{design:international-fonts}}
+<link rel="preload" href="/fonts/the-bold-font.woff" as="font" type="font/woff" crossorigin>
+<script>{{include:design-system/components/loader/critical.js}}</script><style>{{include:design-system/components/loader/critical.css}}</style>
+<link rel="stylesheet" href="/studio-shell.css"><link rel="stylesheet" href="/portfolio-refinements.css"><link rel="stylesheet" href="/asset-loading.css"><link rel="stylesheet" href="/lucide-ui.css"><link rel="stylesheet" href="/mobile-talk.css"><link rel="stylesheet" href="/brand-sizing.css"><link rel="stylesheet" href="/studio-starter.css"><link rel="stylesheet" href="/interaction-animations.css">
+<script defer src="/studios.js"></script><script defer src="/studio-starter.js"></script><script defer src="/mobile-language.js"></script><script defer src="/mobile-talk.js"></script><script defer src="/asset-loading.js"></script><script defer src="/vendor/lottie-light-5.12.2.min.js"></script><script defer src="/interaction-animations.js"></script><script defer src="/lucide-ui.js"></script>
+</head>
+<body class="studio-starter">
+{{include:design-system/components/loader/loader.html}}
+<a class="starter-skip" href="#work">ข้ามไปเนื้อหา</a>
+<section id="home" class="home-screen starter-hero">
+{{include:design-system/components/logo/home.html}}
+{{design:starter-topbar}}
+<div class="home-copy"><span>{{brand:studio}} / DIGITAL CRAFT</span><h1>BOLD BY<br><em>DESIGN.</em></h1><p data-starter-copy="intro">ทุกไอเดีย มีตัวตนของเรา<br>ออกแบบอย่างชัดเจน สร้างอย่างตั้งใจ</p><a class="starter-cta" href="#work"><span data-starter-copy="explore">สำรวจผลงาน</span><span aria-hidden="true">↘</span></a></div>
+<div class="starter-hero-mark" aria-hidden="true">{{brand:studio}}</div>
+</section>
+<main class="starter-main">
+<section class="section" id="work"><div class="section-label">01 / <span data-starter-copy="work">ผลงาน</span></div><h2 class="display">IDEAS INTO<br><em>EXPERIENCE.</em></h2><p class="bodycopy" data-starter-copy="workIntro">พื้นที่สำหรับผลงาน ภาพ และเรื่องราวของทีม</p><div class="starter-work-grid"><a href="#about" class="starter-project"><span>01 / OUR APPROACH</span><strong>LESS.<br>BUT BETTER.</strong><span aria-hidden="true">↗</span></a><a href="#contact" class="starter-project starter-project-red"><span>02 / COLLABORATION</span><strong>MAKE<br>IT MATTER.</strong><span aria-hidden="true">↗</span></a></div></section>
+<section class="section" id="about"><div class="section-label">02 / <span data-starter-copy="about">เกี่ยวกับ</span></div><div class="aboutgrid"><h2 class="display">ONE TEAM.<br><em>ONE VOICE.</em></h2><div><p class="bodycopy" data-starter-copy="aboutIntro">เราเชื่อในงานออกแบบที่เรียบง่าย มีเอกลักษณ์ และใช้งานได้จริง</p><div class="interests"><span>DESIGN</span><span>DEVELOPMENT</span><span>DIGITAL EXPERIENCES</span></div></div></div><div class="brand-studies"><div class="brand-study"><div class="section-label">TYPE STUDY / 01</div><h3 class="study-heading">BOLD BY<br><em>DESIGN.</em></h3><p class="bodycopy" data-starter-copy="typeStudyDesc">{{design:type-description}}</p>{{design:font-samples}}</div><div class="brand-study"><div class="section-label">COLOUR STUDY / 02</div><h3 class="study-heading">DARK. LIGHT.<br><em>RED.</em></h3>{{design:colour-samples}}</div></div></section>
+<section class="section" id="contact"><div class="section-label">03 / <span data-starter-copy="contact">ติดต่อ</span></div><h2 class="contacttitle">LET'S MAKE<br><span>IT HAPPEN.</span></h2><a class="email" href="mailto:{{brand:email}}">{{brand:email}} ↗</a></section>
+{{include:design-system/components/bottom-bar/home-footer.html}}
+</main>
+{{include:design-system/components/bottom-bar/back-to-top.html}}
+</body></html>

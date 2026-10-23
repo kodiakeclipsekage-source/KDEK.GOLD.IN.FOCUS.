@@ -1,0 +1,7 @@
+/* Shared, swap-based typography. International fonts are linked only on pages that need them. */
+@font-face{font-family:"Bold";font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/the-bold-font.woff') format('woff');unicode-range:U+0000-024F}
+@font-face{font-family:"Bold";font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/the-bold-font.woff') format('woff');unicode-range:U+0000-024F}
+@font-face{font-family:"Kanit";font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/kanit-400.woff') format('woff')}
+@font-face{font-family:"Kanit";font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/kanit-500.woff') format('woff')}
+@font-face{font-family:"Kanit";font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/kanit-600.woff') format('woff')}
+.font-en{font-family:var(--studio-font-display);font-weight:var(--studio-display-weight)}.font-th{font-family:var(--studio-font-th);font-weight:var(--studio-content-weight)}.font-jp{font-family:var(--studio-font-ja);font-weight:var(--studio-jp-weight)}.font-cn{font-family:var(--studio-font-zh);font-weight:var(--studio-cn-weight)}

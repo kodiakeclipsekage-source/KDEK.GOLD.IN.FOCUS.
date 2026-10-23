@@ -1,0 +1,4 @@
+/* Logo scale: 150% of the previous badge size. */
+.home-brand,.rail>.brand{width:57px;height:64.5px;min-width:57px;min-height:64.5px}
+@media(max-width:680px){.home-brand,.rail>.brand{width:51px;height:57px;min-width:51px;min-height:57px}}
+

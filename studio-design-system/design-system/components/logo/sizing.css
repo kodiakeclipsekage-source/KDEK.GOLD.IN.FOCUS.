@@ -1,0 +1,17 @@
+/* One badge size for the home page and every project view. */
+:root{--brand-mark-width:var(--studio-logo-width);--brand-mark-height:var(--studio-logo-height);--brand-header-height:var(--studio-header-height)}
+.home-logo-dock .home-brand,.case-study header .brand img{
+ width:var(--brand-mark-width);height:var(--brand-mark-height);
+ min-width:var(--brand-mark-width);min-height:var(--brand-mark-height);
+ flex:none;padding:0;box-sizing:border-box;background:#fff;
+ border:1px solid #ffffff38;border-radius:3px;box-shadow:none;
+}
+.case-study header .brand img{display:block;object-fit:contain}
+.case-study header{height:var(--brand-header-height);min-height:var(--brand-header-height);padding:9px 13px}
+.case-study header .back{min-width:0;white-space:normal}
+.case-study .rail{top:calc(var(--brand-header-height) + 48px);margin-top:calc(var(--brand-header-height) + 32px)}
+@media(max-width:760px){
+ :root{--brand-mark-width:var(--studio-logo-mobile-width);--brand-mark-height:var(--studio-logo-mobile-height);--brand-header-height:var(--studio-header-mobile-height)}
+ .case-study header{padding:10px 14px}
+ .case-study .rail{top:auto;margin-top:0}
+}

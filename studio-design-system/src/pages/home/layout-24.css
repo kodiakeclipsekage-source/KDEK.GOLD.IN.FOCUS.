@@ -1,0 +1,23 @@
+/* The next three-project chapter: a portrait lead and two reserved slots. */
+@media(min-width:761px){
+.workgrid .project.second-featured{grid-column:1;grid-row:span 2;width:100%;justify-self:stretch}
+.workgrid .project.second-featured .project-art{height:calc(100dvh - 64px);min-height:640px;aspect-ratio:auto;background:#111}
+.workgrid .project.second-featured .content-media{object-fit:contain}
+.workgrid .project-placeholder{grid-column:2}
+.workgrid .project-placeholder .project-art{height:calc((100dvh - 60px)/2);min-height:310px}
+}
+.project-placeholder .project-art{background:#242424;color:#f2f2f2;padding:26px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ffffff15}
+.project-placeholder strong{font:clamp(35px,4.2vw,68px)/1.05 Bold,sans-serif;letter-spacing:-.03em}
+.project-placeholder em{color:#e91632;font-style:normal}
+.placeholder-index{font-size:11px;color:#aaa;letter-spacing:.08em}
+.placeholder-mark{align-self:flex-end;color:#e91632;font-size:32px;line-height:1}
+@media(max-width:760px){.workgrid .project.second-featured .project-art{aspect-ratio:9/16}.workgrid .project-placeholder .project-art{height:auto;min-height:0;aspect-ratio:4/5;padding:24px}.project-placeholder strong{font-size:clamp(38px,9vw,60px)}}
+
+.brand-studies{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:52px}
+.brand-study{background:#1c1c1c;border:1px solid #ffffff1b;padding:clamp(24px,3vw,44px);min-width:0;display:flex;flex-direction:column;gap:20px}
+.brand-study .section-label{margin:0;color:#999}.brand-study .bodycopy{font-size:16px;line-height:1.8}
+.study-heading{font:clamp(35px,4.2vw,70px)/1.05 Bold,sans-serif;letter-spacing:-.03em;margin:0}.study-heading em{font-style:normal;color:#e91632}
+.study-fonts{display:grid;gap:12px;margin-top:auto}.study-fonts span{border-top:1px solid #444;padding-top:12px;font:25px/1.2 Bold,Kanit,sans-serif}.study-fonts small{display:block;margin-top:5px;font:10px Kanit,sans-serif;color:#888}
+.study-fonts .font-jp{font:var(--studio-jp-weight,600) 22px/1.3 var(--studio-font-ja)}.study-fonts .font-cn{font:var(--studio-cn-weight,600) 22px/1.3 var(--studio-font-zh)}
+.brand-palette{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:auto}.brand-palette>div{min-width:0}.brand-palette i{display:block;height:74px;border:1px solid #ffffff28}.brand-palette span{display:block;margin-top:8px;color:#aaa;font:11px/1.5 Kanit,sans-serif}.brand-palette b{color:#fff;font-weight:600}
+@media(max-width:760px){.brand-studies{grid-template-columns:1fr;gap:14px;margin-top:34px}.brand-study{padding:25px}.study-heading{font-size:clamp(38px,10vw,58px)}.brand-palette i{height:60px}}

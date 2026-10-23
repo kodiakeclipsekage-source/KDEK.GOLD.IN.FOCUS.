@@ -1,0 +1,8 @@
+/* Floating anchor to the top, revealed after entering Selected work. */
+.back-to-top{position:fixed;right:max(24px,env(safe-area-inset-right));bottom:calc(24px + env(safe-area-inset-bottom));z-index:20;display:grid;place-items:center;width:48px;height:48px;border:1px solid #777;border-radius:50%;background:#111d;color:#fff;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease,background .2s ease,visibility .25s}
+.back-to-top .lucide-icon{width:22px;height:22px}
+body.work-entered .back-to-top{opacity:1;visibility:visible;pointer-events:auto;transform:none}
+.back-to-top:hover{background:#ef1632;border-color:#ef1632}
+@media(max-width:760px){.back-to-top{right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){.back-to-top{transition:none;transform:none}}
+

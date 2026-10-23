@@ -1,0 +1,12 @@
+.project-attention{position:absolute;z-index:3;display:block;pointer-events:none!important;animation:attention-appear .18s ease-out both}
+.project-attention.is-leaving{animation:attention-disappear .25s ease-in both}
+.project-attention-art{display:block;width:100%;height:100%;transform-origin:50% 50%;pointer-events:none!important}
+.project-attention-art svg{display:block;width:100%!important;height:100%!important;filter:invert(1) drop-shadow(0 1px 3px #0008);pointer-events:none!important;overflow:visible}
+.project-attention-caption{position:absolute;z-index:1;display:block;width:max-content;padding:5px 9px;border:1px solid #ffffff28;border-radius:4px;background:#111c;color:#fff;font:600 12px/1.4 Bold,Kanit,'Noto Sans Thai','Noto Sans JP','Noto Sans SC',sans-serif;letter-spacing:.025em;white-space:nowrap;box-shadow:0 2px 8px #0002;pointer-events:none!important}
+.project-attention-caption[hidden]{display:none}
+.project-attention-caption-sizer{visibility:hidden}
+.project-attention-caption-ink{position:absolute;inset:5px 9px;overflow:hidden;white-space:nowrap}
+@media(hover:none),(pointer:coarse),(max-width:760px){.project-attention-caption{font-size:11px;padding:5px 8px}.project-attention-caption-ink{inset:5px 8px}}
+@keyframes attention-appear{from{opacity:0}to{opacity:1}}
+@keyframes attention-disappear{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.project-attention,.project-attention.is-leaving{animation:none}}

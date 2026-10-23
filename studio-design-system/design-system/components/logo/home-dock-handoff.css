@@ -1,0 +1,10 @@
+/* Keep one visible logo: the home logo occupies the hidden sidebar slot. */
+.rail>[data-logo-slot]{visibility:hidden;pointer-events:none}
+.home-logo-dock{transition:top .417s cubic-bezier(.03,0,0,1),left .417s cubic-bezier(.03,0,0,1),padding .417s cubic-bezier(.03,0,0,1),background .28s ease,opacity .28s ease;will-change:auto}
+.home-logo-label{overflow:hidden;max-width:100px;opacity:1;white-space:nowrap;transition:opacity .22s ease,max-width .417s ease,padding .417s ease}
+body.work-entered .home-logo-dock{top:var(--logo-slot-y,25px);left:var(--logo-slot-x,32px);padding:0;gap:0;background:transparent;backdrop-filter:none;opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:top .417s cubic-bezier(.03,0,0,1),left .417s cubic-bezier(.03,0,0,1),padding .417s cubic-bezier(.03,0,0,1),background .28s ease,opacity .28s ease}
+body.work-entered .home-logo-dock .home-brand{visibility:visible;pointer-events:auto}
+body.work-entered .home-logo-label{opacity:0;max-width:0;padding:0}
+body.logo-offscreen .home-logo-dock{opacity:0;visibility:hidden;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.home-logo-dock,body.work-entered .home-logo-dock,.home-logo-label{transition:none}}
+

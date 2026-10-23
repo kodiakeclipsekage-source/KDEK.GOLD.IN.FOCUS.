@@ -1,0 +1,7 @@
+/* Display the supplied transparent NEKO logo without its outer empty canvas. */
+.team-logo-frame{position:relative;display:block;width:112px;height:92px;overflow:hidden;flex:none}
+.team-mark .team-logo-frame img{position:absolute;left:-25%;top:-47%;width:150%;height:auto;max-width:none;object-fit:contain;filter:drop-shadow(0 1px 2px #0007)}
+#albumTeam .team-logo-frame{width:50px;height:41px}
+#albumTeam .team-logo-frame img{width:150%;height:auto;object-position:center}
+@media(max-width:760px){.project-team .team-logo-frame{width:96px;height:79px}}
+

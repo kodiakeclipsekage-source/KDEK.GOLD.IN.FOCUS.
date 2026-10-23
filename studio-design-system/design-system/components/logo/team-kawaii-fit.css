@@ -1,0 +1,7 @@
+/* Preserve the complete vertical Kawaii SleepStudio logo without the NEKO crop. */
+.project-team.logo-contain .team-logo-frame{width:100px;height:150px}
+.team-mark.logo-contain .team-logo-frame img{inset:0;width:100%;height:100%;object-fit:contain;object-position:left bottom}
+#albumTeam .logo-contain .team-logo-frame{width:40px;height:60px}
+#albumTeam .team-mark.logo-contain .team-logo-frame img{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+@media(max-width:760px){.project-team.logo-contain .team-logo-frame{width:80px;height:120px}}
+

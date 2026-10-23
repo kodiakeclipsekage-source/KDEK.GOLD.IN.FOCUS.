@@ -1,0 +1,5 @@
+ header{top:0;left:0;width:100%;height:76px;padding:10px 14px;border-width:0 0 1px;border-radius:0;background:#141414f5}
+ header .brand img{width:40px;height:45px;min-width:40px}
+ header .brand-name{display:block;font:15px/1 Bold,Arial,sans-serif;letter-spacing:-.2px}
+ header .brand-kodiak{color:#f1f0eb}header .brand-eclipse{color:#ef1632}header .brand-kage{color:#a6aaad}
+ .back{font-size:11px;gap:7px}

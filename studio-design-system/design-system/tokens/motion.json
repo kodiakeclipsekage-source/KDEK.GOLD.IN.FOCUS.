@@ -1,0 +1,8 @@
+{
+  "shutterCloseMs":340,
+  "shutterOpenMs":560,
+  "contentRevealMs":450,
+  "shutterCleanupPaddingMs":20,
+  "loaderMascotMs":3000,
+  "reducedMotion":"Respect prefers-reduced-motion; preserve all existing reduced-motion fallbacks."
+}

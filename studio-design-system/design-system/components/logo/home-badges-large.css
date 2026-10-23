@@ -1,0 +1,4 @@
+/* Larger matching logo badges, preserving the reference proportions. */
+.home-brand,.rail>.brand{width:76px;height:86px;min-width:76px;min-height:86px}
+@media(max-width:680px){.home-brand,.rail>.brand{width:68px;height:76px;min-width:68px;min-height:76px}}
+

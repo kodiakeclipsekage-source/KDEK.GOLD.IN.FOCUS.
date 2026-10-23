@@ -1,0 +1,13 @@
+/* Portrait project and one continuous navigation panel. */
+.workgrid .project:nth-child(6){width:min(100%,480px);justify-self:center}
+.workgrid .project:nth-child(6) .project-art{height:auto;min-height:0;aspect-ratio:9/16;padding:0}
+.workgrid .project:nth-child(6) .content-media{object-fit:contain;background:#111}
+.back-to-top,.back-to-top:hover,.back-to-top:focus-visible{background:#fff;color:#ef1632;border-color:#fff}
+.topline{border-radius:8px;background:#181818f5}
+.topline:has(#menu.open){border-radius:8px 8px 0 0}
+.topline #menu{position:absolute;top:100%;right:0;left:0;width:100%;border:0;border-top:1px solid #ffffff15;border-radius:0 0 14px 14px;background:#181818f5;box-shadow:0 20px 35px #0004;padding:16px 12px 20px;transform:translateY(-6px);transform-origin:top center;max-height:calc(100dvh - 110px);overflow-y:auto;backdrop-filter:none}
+.topline #menu.open{transform:translateY(0)}
+#menu .close{display:none}
+#menu nav{margin-top:0}
+#menu .small{overflow-wrap:anywhere}
+

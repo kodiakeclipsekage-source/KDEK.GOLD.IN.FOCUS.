@@ -1,0 +1,11 @@
+{
+  "background": {"value":"#111111","label":"PRIMARY DARK","role":"พื้นหลังหลัก"},
+  "light": {"value":"#F5F5F5","label":"PRIMARY LIGHT","role":"ตัวอักษรและพื้นผิวสว่าง"},
+  "brand": {"value":"#E91632","label":"BRAND RED","role":"สีประจำแบรนด์"},
+  "action": {"value":"#EF1632","label":"INTERACTION RED","role":"เมนู ปุ่ม และ focus"},
+  "editorial": {"value":"#0b0b0b","label":"EDITORIAL DARK","role":"หน้ารายละเอียดและเรซูเม่"},
+  "surface": {"value":"#171717","label":"SURFACE","role":"พื้นผิวการ์ด"},
+  "editorialText": {"value":"#f1f0eb","label":"EDITORIAL TEXT","role":"ข้อความหน้ารายละเอียด"},
+  "muted": {"value":"#969692","label":"MUTED","role":"ข้อความรอง"},
+  "line": {"value":"#ffffff24","label":"DIVIDER","role":"เส้นแบ่งเนื้อหา"}
+}

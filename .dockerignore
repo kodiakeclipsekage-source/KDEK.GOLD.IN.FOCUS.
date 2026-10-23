@@ -1,0 +1,14 @@
+node_modules
+dist
+!studio-design-system/dist
+!studio-design-system/dist/**
+.env
+.env.*
+pdf
+tmp
+test-results
+playwright-report
+.git
+*.log
+*adminsdk*.json
+service-account*.json

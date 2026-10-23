@@ -1,0 +1,4 @@
+footer{margin-left:calc(24% + 20px);padding:24px 24px 70px;display:flex;justify-content:space-between;gap:24px;font-size:10px;color:#888}
+footer a:hover{color:#fff}
+.up{position:fixed;right:22px;bottom:22px;width:44px;height:44px;display:grid;place-items:center;z-index:22;background:#242424;color:#ef1632;border:1px solid #ffffff22;border-radius:50%;box-shadow:0 3px 20px #0003}
+.up:hover{background:#333}

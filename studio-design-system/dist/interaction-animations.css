@@ -1,0 +1,12 @@
+.kdek-chat-animation{display:block;flex:none;color:inherit}
+.rail-bottom .red-square.kdek-chat-animation{width:45px;height:45px;padding:5px}
+.mobile-talk-trigger>.kdek-chat-animation{width:27px;height:27px;color:var(--studio-color-action,#EF1632)}
+.kdek-chat-animation svg{display:block;width:100%!important;height:100%!important}
+.kdek-click-animation{position:fixed;z-index:20000;width:90px;height:90px;transform:translate(-50%,-50%);pointer-events:none!important;filter:drop-shadow(0 1px 3px #0005)}
+.kdek-click-animation svg{display:block;width:100%!important;height:100%!important;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.kdek-click-animation{display:none}}
+/* Supplied artwork is black; invert it for the site's dark surfaces. */
+.kdek-chat-animation svg,.kdek-click-animation svg{filter:invert(1)}
+
+.contact-links .social-pending{display:flex;align-items:center;gap:10px;min-height:36px}.social-animation{display:block;width:24px;height:24px;flex:none}.social-animation svg{display:block;width:100%!important;height:100%!important;filter:invert(1)}.contact-links .social-pending small{margin-left:2px}
+@media(max-width:760px){.contact-links .social-pending{min-height:var(--studio-control-size,44px)}}

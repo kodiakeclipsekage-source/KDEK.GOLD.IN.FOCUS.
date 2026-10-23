@@ -1,0 +1,15 @@
+#resumeTransition{position:fixed;inset:0;z-index:20000;pointer-events:auto;overflow:hidden}
+#resumeTransition svg{display:block;width:100%;height:100%}
+.resume-shutter-aperture{transform-origin:0 0;transform:scale(0) rotate(-24deg)}
+#resumeTransition.is-closing{animation:resume-shutter-fade-in var(--studio-shutter-close,340ms) ease both}
+#resumeTransition.is-closing .resume-shutter-aperture{animation:resume-shutter-close var(--studio-shutter-close,340ms) cubic-bezier(.65,0,.35,1) both}
+#resumeTransition.is-opening{animation:resume-shutter-fade-out var(--studio-shutter-open,560ms) ease both}
+#resumeTransition.is-opening .resume-shutter-aperture{animation:resume-shutter-open var(--studio-shutter-open,560ms) cubic-bezier(.25,.7,.25,1) both}
+html.resume-opening .case-study>:not(#resumeTransition){animation:resume-content-reveal var(--studio-content-reveal,450ms) ease both}
+@keyframes resume-shutter-close{from{transform:scale(5) rotate(20deg)}to{transform:scale(0) rotate(-24deg)}}
+@keyframes resume-shutter-open{from{transform:scale(0) rotate(-24deg)}to{transform:scale(5) rotate(20deg)}}
+@keyframes resume-shutter-fade-in{from{opacity:0}30%,to{opacity:1}}
+@keyframes resume-shutter-fade-out{from,65%{opacity:1}to{opacity:0}}
+@keyframes resume-content-reveal{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){#resumeTransition,#resumeTransition .resume-shutter-aperture,html.resume-opening .case-study>:not(#resumeTransition){animation:none!important}}
+@media print{#resumeTransition{display:none!important}html.resume-entering .case-study>*{visibility:visible!important;opacity:1!important}}

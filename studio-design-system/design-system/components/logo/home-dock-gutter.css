@@ -1,0 +1,9 @@
+/* Keep the normal work gutter and match the arriving logo bar to the sidebar. */
+#work{scroll-margin-top:-68px}
+.rail>[data-logo-slot]{display:block;width:100%;height:84.5px;min-height:84.5px;flex:none;visibility:hidden;pointer-events:none}
+.home-logo-dock{box-sizing:border-box;left:var(--logo-slot-x,12px);width:var(--logo-slot-width,280px);height:84.5px;transition:top .417s cubic-bezier(.03,0,0,1),left .417s cubic-bezier(.03,0,0,1),width .417s cubic-bezier(.03,0,0,1),background .28s ease,opacity .28s ease}
+body.work-entered .home-logo-dock{width:var(--logo-slot-width,280px);height:84.5px;padding:10px 14px;gap:23px;background:#141414e8;transition:top .417s cubic-bezier(.03,0,0,1),left .417s cubic-bezier(.03,0,0,1),width .417s cubic-bezier(.03,0,0,1),background .28s ease,opacity .28s ease}
+@media(max-width:760px){#work{scroll-margin-top:-70px}.home-logo-dock{left:10px;width:170px}body.work-entered .home-logo-dock{left:var(--logo-slot-x,10px)}}
+@media(max-width:680px){.rail>[data-logo-slot]{height:73px;min-height:73px}.home-logo-dock,body.work-entered .home-logo-dock{height:73px;padding:8px 10px;gap:12px}}
+@media(prefers-reduced-motion:reduce){.home-logo-dock,body.work-entered .home-logo-dock{transition:none}}
+

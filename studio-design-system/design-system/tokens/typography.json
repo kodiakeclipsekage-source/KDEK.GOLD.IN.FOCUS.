@@ -1,0 +1,64 @@
+{
+  "display": {
+    "name": "THE BOLD FONT",
+    "family": "Bold",
+    "fallbacks": [
+      "Kanit",
+      "Noto Sans Thai",
+      "Noto Sans JP",
+      "Noto Sans SC",
+      "sans-serif"
+    ],
+    "weight": 600,
+    "code": "EN",
+    "role": "DISPLAY",
+    "sample": "THE BOLD FONT",
+    "file": "/fonts/the-bold-font.woff"
+  },
+  "th": {
+    "name": "Kanit",
+    "family": "Kanit",
+    "fallbacks": [
+      "Noto Sans Thai",
+      "sans-serif"
+    ],
+    "weight": 600,
+    "code": "TH",
+    "role": "CONTENT",
+    "sample": "กนก Kanit 600",
+    "localWeights": [
+      400,
+      500,
+      600
+    ],
+    "filePattern": "/fonts/kanit-{weight}.woff"
+  },
+  "ja": {
+    "name": "Noto Sans JP",
+    "family": "Noto Sans JP",
+    "fallbacks": [
+      "sans-serif"
+    ],
+    "weight": 600,
+    "code": "JP",
+    "role": "CONTENT",
+    "sample": "あ Noto Sans JP",
+    "googleFamily": "Noto+Sans+JP:wght@600"
+  },
+  "zh": {
+    "name": "Noto Sans SC",
+    "family": "Noto Sans SC",
+    "fallbacks": [
+      "sans-serif"
+    ],
+    "weight": 600,
+    "code": "CN",
+    "role": "CONTENT",
+    "sample": "字 Noto Sans SC",
+    "googleFamily": "Noto+Sans+SC:wght@600"
+  },
+  "thaiFallback": {
+    "family": "Noto Sans Thai",
+    "googleFamily": "Noto+Sans+Thai:wght@600"
+  }
+}

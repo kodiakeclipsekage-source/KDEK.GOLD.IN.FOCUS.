@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/state/ledger {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['schemaVersion','transactions','snapshots','imports'])
+        && request.resource.data.schemaVersion == 1
+        && request.resource.data.transactions is list && request.resource.data.transactions.size() <= 2000
+        && request.resource.data.snapshots is list && request.resource.data.snapshots.size() <= 2000
+        && request.resource.data.imports is list && request.resource.data.imports.size() <= 2000;
+      allow delete: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/* Heroicons outline: native SVG assets, sized consistently with each control. */
+.lucide-icon{width:22px;height:22px;display:inline-block;vertical-align:middle;flex:none;stroke:currentColor}
+.hero-button,.motion,.close,.copybtn,.lbfoot button,.red-square,#menuToggle{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.explore .lucide-icon,.email .lucide-icon,footer .lucide-icon,#mediaSource .lucide-icon{width:18px;height:18px}
+.copybtn .lucide-icon{width:26px;height:26px}
+#menu .close .lucide-icon{width:20px;height:20px}
+.media-fail .lucide-icon{width:20px;height:20px}

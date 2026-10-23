@@ -1,0 +1,11 @@
+/* Smaller logo; floating home dock hands over to Selected work. */
+.home-brand,.rail>.brand{width:38px;height:43px;min-width:38px;min-height:43px}
+.home-logo-dock{position:fixed;top:15px;left:20px;z-index:9;display:flex;align-items:center;gap:23px;padding:10px 14px;border-radius:5px;background:transparent;opacity:1;transform:translateY(0);visibility:visible;transition:background .28s ease,opacity .28s ease,transform .417s cubic-bezier(.03,0,0,1),visibility 0s;will-change:transform,opacity}
+.home-logo-dock .home-brand{position:static;opacity:1;transform:none;transition:none;visibility:visible}
+.home-logo-label{font-size:12px;line-height:1;color:#aaa;padding-right:12px}
+body.hero-scrolled .home-logo-dock{background:#141414e8;backdrop-filter:blur(12px)}
+body.work-entered .home-logo-dock{opacity:0;transform:translateY(-18px);visibility:hidden;pointer-events:none;transition:background .28s ease,opacity .28s ease,transform .417s cubic-bezier(.03,0,0,1),visibility 0s .417s}
+body.work-entered .home-logo-dock .home-brand{visibility:visible}
+@media(max-width:680px){.home-brand,.rail>.brand{width:34px;height:38px;min-width:34px;min-height:38px}.home-logo-dock{left:10px;top:14px;gap:12px;padding:8px 10px}.home-logo-label{font-size:10px;padding-right:0}}
+@media(prefers-reduced-motion:reduce){.home-logo-dock,body.work-entered .home-logo-dock{transition:none;transform:none;will-change:auto}}
+

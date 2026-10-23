@@ -1,0 +1,30 @@
+/* Gold Ledger application palette. Shared KDEK typography/layout stay in studio tokens. */
+:root {
+  --ledger-background: #f3f3f0;
+  --ledger-surface: #ffffff;
+  --ledger-surface-soft: #f4f3ef;
+  --ledger-surface-raised: #eae8e1;
+  --ledger-text: #1c1d1a;
+  --ledger-text-secondary: #50514c;
+  --ledger-muted: #71716b;
+  --ledger-border: #deded6;
+  --ledger-dark: #171816;
+  --ledger-dark-surface: #232420;
+  --ledger-on-dark: #f8f8f3;
+  --ledger-dark-muted: #b5b5a9;
+  --ledger-dark-line: #ffffff26;
+  --ledger-gold: #c4a35a;
+  --ledger-gold-text: #80601e;
+  --ledger-gold-soft: #f6f0e2;
+  --ledger-gold-line: #ded0ad;
+  --ledger-red: #e91632;
+  --ledger-red-text: #aa1730;
+  --ledger-red-action: #c5152e;
+  --ledger-red-hover: #a81228;
+  --ledger-red-soft: #fff0f2;
+  --ledger-red-line: #efbac2;
+  --ledger-action: var(--ledger-gold);
+  --ledger-action-hover: #d6b96f;
+  --ledger-action-text: #171816;
+  --ledger-focus: var(--ledger-gold-text);
+}

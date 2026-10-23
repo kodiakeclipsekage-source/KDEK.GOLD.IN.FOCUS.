@@ -1,0 +1,14 @@
+/* Optional project-specific team signature, separate from media and site branding. */
+.project-team{position:absolute;left:24px;bottom:25px;z-index:2;pointer-events:none;max-width:calc(100% - 108px);color:white;text-shadow:0 2px 12px #0009}
+.team-mark{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.team-mark img{display:block;width:100px;height:82px;object-fit:contain;object-position:left bottom;filter:drop-shadow(0 2px 8px #0005)}
+.team-mark-name{font-size:23px;line-height:1.2;letter-spacing:-.4px}
+.has-logo .team-mark-name{font-size:11px;letter-spacing:0}
+.team-caption{display:block;margin-top:4px;font-size:11px;line-height:1.4;color:#999;white-space:normal}
+#albumTeam{margin-top:14px;color:#ccc}
+#albumTeam[hidden]{display:none}
+#albumTeam .team-mark{flex-direction:row;align-items:center;gap:10px}
+#albumTeam .team-mark img{width:42px;height:42px;object-position:center}
+#albumTeam .team-mark-name{font-size:13px;letter-spacing:0}
+@media(max-width:760px){.project-team{left:18px;bottom:22px}.team-mark img{width:80px;height:65px}.team-mark-name{font-size:20px}}
+

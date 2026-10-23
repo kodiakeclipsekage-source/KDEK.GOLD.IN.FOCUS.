@@ -1,0 +1,36 @@
+/* Experience is part of Resume; images stay below the fold and load on demand. */
+.resume-experience{border-top:1px solid var(--line);padding:28px 24px 36px;scroll-margin-top:30px}
+.resume-experience-heading{margin-bottom:32px}.resume-experience-heading>.label{font-size:10px;color:#92928d;display:block;margin-bottom:20px}
+.resume-experience-heading h2{font-size:clamp(26px,3vw,42px);font-weight:500;line-height:1.35;margin:0 0 18px;letter-spacing:-.025em}
+.resume-experience-heading>p{font-size:15px;line-height:1.8;color:#aaa;margin:0;max-width:52ch}
+.resume-anchor{display:block;scroll-margin-top:30px}
+.experience-work{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:20px 28px;border-top:1px solid var(--line);padding:24px 0 40px;scroll-margin-top:30px}
+.experience-heading{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#aaa}.experience-heading .label{font-size:10px}.experience-studio{font-size:11px;text-align:right}
+.experience-media{margin:0;align-self:start;border-radius:4px;overflow:hidden;background:#171717;min-width:0}
+.experience-media>img{display:block;width:100%;height:auto}
+.experience-media figcaption{font:9px/1.6 Bold,Arial,sans-serif;color:#969692;padding:12px;letter-spacing:.03em}
+.experience-web{padding:10px 10px 0}.experience-web img{border:1px solid #ffffff12;border-radius:3px}.experience-web figcaption{padding-inline:0}
+.experience-portraits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px 8px 0}
+.experience-portraits img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
+.experience-story{background:#f5f5f5}.experience-story>img{aspect-ratio:16/9;object-fit:contain}.experience-story figcaption{color:#666;border-top:1px solid #11111112}
+.experience-details{min-width:0}.experience-details h3{font-size:clamp(22px,2.1vw,31px);font-weight:500;line-height:1.4;letter-spacing:-.025em;margin:0 0 12px;text-wrap:pretty}
+.experience-kind{font-size:11px;line-height:1.8;color:#969692;margin:0 0 20px}
+.experience-copy p{font-size:15px;line-height:1.8;color:#b5b5af;margin:0 0 18px;text-wrap:pretty}
+.experience-copy ul{list-style:none;padding:0;margin:0 0 20px;font-size:13px;line-height:1.8;color:#aaa}
+.experience-copy li{border-top:1px solid var(--line);padding:10px 0 10px 14px;position:relative}
+.experience-copy li:before{content:'';position:absolute;left:0;top:21px;width:4px;height:4px;background:var(--red);border-radius:50%}
+.experience-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.experience-tags span{font:9px/1.6 Bold,Arial,sans-serif;color:#b0b0aa;border:1px solid var(--line);padding:5px 8px;border-radius:20px}
+.experience-link{display:inline-flex;gap:18px;align-items:center;min-height:44px;border-bottom:1px solid #666;font-size:12px;font-weight:500}.experience-link:hover{color:var(--red);border-color:var(--red)}
+@media(min-width:1800px){.resume-experience{padding-inline:40px}.experience-work{gap:24px 40px}.experience-copy p{font-size:17px}.experience-copy ul{font-size:15px}}
+@media(min-width:761px) and (max-width:1050px){.experience-work{grid-template-columns:1fr}.experience-media{max-width:520px;width:100%}.experience-details h3 br{display:none}}
+@media(max-width:760px){
+ .resume-experience{padding:26px 10px 16px;scroll-margin-top:0}.resume-anchor,.experience-work{scroll-margin-top:0}
+ .resume-experience-heading{margin-bottom:26px}.resume-experience-heading h2{font-size:29px}.resume-experience-heading h2 br{display:none}
+ .experience-work{grid-template-columns:1fr;gap:22px;padding:20px 0 36px}.experience-heading .label{font-size:9px}.experience-studio{font-size:10px}
+ .experience-details h3{font-size:27px}.experience-details h3 br{display:none}.experience-copy p{font-size:16px}.experience-copy ul{font-size:15px}.experience-kind{font-size:12px}
+ .experience-media figcaption{font-size:8px}.experience-link{font-size:13px}
+}
+@media print{
+ .resume-experience{padding:15pt 0;border-color:#aaa;break-inside:auto}.resume-experience-heading{margin-bottom:12pt}.resume-experience-heading>.label{font-size:7pt;color:#555;margin-bottom:7pt}.resume-experience-heading h2{font-size:15pt;color:#111;margin-bottom:6pt}.resume-experience-heading h2 br{display:none}.resume-experience-heading>p{font-size:9pt;color:#222}
+ .experience-work{display:block;padding:12pt 0;border-color:#ccc;break-inside:avoid}.experience-heading{margin-bottom:8pt;color:#444}.experience-heading .label,.experience-studio{font-size:7pt}.experience-media,.experience-tags{display:none}.experience-details h3{font-size:12pt;color:#111;line-height:1.35;margin-bottom:5pt}.experience-details h3 br{display:none}.experience-kind{font-size:8pt;color:#555;margin-bottom:7pt}.experience-copy p,.experience-copy ul{font-size:9pt;line-height:1.5;color:#222;margin-bottom:8pt}.experience-copy li{padding:4pt 0 4pt 9pt;border-color:#ddd}.experience-copy li:before{top:9pt;background:#555}.experience-link{font-size:8pt;min-height:20pt;color:#111}
+}

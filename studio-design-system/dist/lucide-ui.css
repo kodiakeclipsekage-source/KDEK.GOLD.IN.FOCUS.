@@ -1,0 +1,27 @@
+/* Lucide Animated by pqoqubbw, MIT. All UI glyphs share one visual system. */
+.lucide-icon{display:inline-flex;align-items:center;justify-content:center;flex:none;width:24px;height:24px;vertical-align:middle;line-height:0;color:inherit;pointer-events:none}
+.lucide-icon>.lucide-glyph{display:flex;width:100%;height:100%;align-items:center;justify-content:center}
+.lucide-icon svg{display:block;width:100%!important;height:100%!important;overflow:visible;stroke:currentColor;stroke-width:2;fill:none}
+.lucide-icon[hidden]{display:none!important}
+#menuToggle .lucide-icon{width:28px;height:28px}
+.hero-button .lucide-icon,#motion .lucide-icon{width:27px;height:27px}
+.mobile-language-toggle .lucide-icon{width:15px;height:15px;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.mobile-language-toggle .lucide-icon[data-expanded="true"]{transform:rotate(180deg)}
+.mobile-language-toggle .lucide-icon svg{transform:none!important}
+.mobile-talk-trigger .lucide-icon{width:23px;height:23px;color:var(--studio-color-action,#EF1632)}
+.mobile-talk-dialog .lucide-icon{width:22px;height:22px}
+.rail-bottom .red-square .lucide-icon{width:25px;height:25px}
+#backToTop .lucide-icon,.up .lucide-icon{width:23px;height:23px}
+.hero .play{display:inline-flex;gap:10px;align-items:center;justify-content:center}
+.hero .play .lucide-icon{width:22px;height:22px}
+.placeholder-mark .lucide-icon{width:1em;height:1em}
+.page-loader .lucide-icon{width:56px;height:56px;margin:auto;color:var(--studio-color-action,#EF1632)}
+.video-loading{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;color:#fff;z-index:1}
+.video-loading .lucide-icon{width:36px;height:36px}
+#homeError .lucide-icon,#imageError .lucide-icon,.media-fail .lucide-icon,.media-load-note .lucide-icon{width:21px;height:21px;margin-right:8px}
+.next>.lucide-icon{float:right;width:40px;height:40px}
+.error-page{min-height:100svh;display:grid;place-content:center;justify-items:center;gap:18px;background:var(--studio-color-background,#111111);color:var(--studio-color-light,#F5F5F5);text-align:center;font:var(--studio-content-weight,600) 16px/1.6 var(--studio-font-content);margin:0;padding:28px}
+.error-illustration .lucide-icon{width:80px;height:80px;color:var(--studio-color-action,#EF1632)}.error-code{font:600 clamp(70px,16vw,130px)/1 sans-serif;letter-spacing:-.07em}
+.error-page h1{margin:0;font-size:28px}.error-page p{margin:0;color:#aaa}.error-page a{color:white;padding:12px 22px;border:1px solid #888;border-radius:6px}
+@media(max-width:760px){.next>.lucide-icon{width:32px;height:32px}}
+@media(prefers-reduced-motion:reduce){.lucide-icon,.lucide-icon *{animation:none!important;transition:none!important}.video-loading .lucide-icon{opacity:.75}}

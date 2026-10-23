@@ -1,0 +1,7 @@
+/* Native snapping is disabled: one interruptible assist handles the work boundary. */
+html{scroll-padding-top:0;scroll-snap-type:none}
+.home-screen,.shell{scroll-snap-align:none;scroll-margin-top:0}
+#work{scroll-margin-top:12px}
+#about,#contact,#studios{scroll-margin-top:80px}
+@media(max-width:760px){#work{scroll-margin-top:10px}}
+

@@ -1,0 +1,10 @@
+/* Rounded logo badges and consistent full-width project presentation. */
+.home-brand,.brand{box-sizing:border-box;background:#f5f5f3;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px #0002}
+.home-brand{width:96px;padding:12px}
+.brand{width:96px;min-height:0;padding:12px;justify-content:center}
+.brand-picture{width:100%;padding:0;background:transparent}
+@media(max-width:760px){
+ .home-brand,.brand{width:80px;padding:10px;border-radius:14px;min-height:0}
+ .brand-picture{width:100%}
+}
+

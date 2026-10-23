@@ -1,0 +1,5 @@
+/* Slowly pulse only the red marker of the current navigation item. */
+.railnav a.active::before{animation:nav-dot-pulse 8s ease-in-out infinite}
+@keyframes nav-dot-pulse{0%,100%{opacity:1}50%{opacity:.2}}
+@media(prefers-reduced-motion:reduce){.railnav a.active::before{animation:none;opacity:1}}
+

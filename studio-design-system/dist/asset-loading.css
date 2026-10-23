@@ -1,0 +1,67 @@
+/* KDEK STUDIO — Branded Loader. Original: Uiverse.io by Shoh2008. */
+.asset-loader-mascot{display:flex;align-items:center;justify-content:center;width:224px;height:185px;margin:0 auto 32px;pointer-events:none}
+.asset-brand-loader{
+  --brand-red:var(--studio-color-brand,#E91632);
+  --brand-dark:var(--studio-color-background,#111111);
+  --brand-light:var(--studio-color-light,#F5F5F5);
+  width:160px;
+  height:185px;
+  flex:none;
+  position:relative;
+  background:var(--brand-light);
+  border-radius:100px 100px 0 0;
+}
+.asset-brand-loader::after{
+  content:"";
+  position:absolute;
+  width:100px;
+  height:125px;
+  left:50%;
+  top:25px;
+  transform:translateX(-50%);
+  background-image:
+    radial-gradient(circle,var(--brand-dark) 48%,transparent 55%),
+    radial-gradient(circle,var(--brand-dark) 48%,transparent 55%),
+    radial-gradient(circle,var(--brand-light) 30%,transparent 45%),
+    radial-gradient(circle,var(--brand-dark) 48%,transparent 51%),
+    linear-gradient(var(--brand-dark) 20px,transparent 0),
+    linear-gradient(var(--brand-red) 60px,transparent 0),
+    radial-gradient(circle,var(--brand-red) 50%,transparent 51%),
+    radial-gradient(circle,var(--brand-red) 50%,transparent 51%);
+  background-repeat:no-repeat;
+  background-size:16px 16px,16px 16px,10px 10px,42px 42px,12px 3px,50px 25px,70px 70px,70px 70px;
+  background-position:25px 10px,55px 10px,36px 44px,50% 30px,50% 85px,50% 50px,50% 22px,50% 45px;
+  animation:kdek-face-lift var(--studio-loader-mascot,3000ms) linear infinite alternate;
+}
+.asset-brand-loader::before{
+  content:"";
+  position:absolute;
+  width:140%;
+  height:125px;
+  left:-20%;
+  top:0;
+  background-image:
+    radial-gradient(circle,var(--brand-light) 48%,transparent 50%),
+    radial-gradient(circle,var(--brand-light) 48%,transparent 50%);
+  background-repeat:no-repeat;
+  background-size:65px 65px;
+  background-position:0px 12px,145px 12px;
+  animation:kdek-ear-lift var(--studio-loader-mascot,3000ms) linear infinite alternate;
+}
+@keyframes kdek-face-lift{from{transform:translateX(-60%)}to{transform:translateX(-30%)}}
+@keyframes kdek-ear-lift{from{transform:translateX(10px)}to{transform:translateX(0)}}
+@media(max-height:480px){.asset-loader-mascot{height:139px;margin-bottom:24px}.asset-brand-loader{transform:scale(.75)}}
+@media(prefers-reduced-motion:reduce){.asset-brand-loader::before,.asset-brand-loader::after{animation:none}}
+html.assets-revealing #assetLoader{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s ease,visibility .35s}
+html.assets-revealing body>:not(#assetLoader){animation:asset-content-in .4s ease both}
+.asset-loader-note{position:static;width:auto;height:auto;margin:24px 0 0;padding:0;overflow:visible;clip-path:none;white-space:normal;color:#aaa;font:var(--studio-content-weight,600) 12px/1.7 var(--studio-font-content)}
+.digital{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,.7fr);align-items:center;gap:32px;padding:35px 35px 60px;background:var(--studio-color-surface,#171717)}
+.digital-words{position:relative;inset:auto;max-width:none;width:auto;display:block}
+.digital-shadow-animation{width:160px;height:300px;justify-self:center;filter:invert(1)}
+.digital-shadow-animation svg{display:block;width:100%!important;height:100%!important}
+.digital-words small{margin:20px 0 0;max-width:32ch;font-size:16px;line-height:1.8}
+@keyframes asset-content-in{from{opacity:0}to{opacity:1}}
+@media(max-width:760px){.digital{grid-template-columns:minmax(0,1fr) 100px;gap:16px;padding:26px 22px 65px;height:auto;min-height:360px}.digital-words{inset:auto;max-width:none;font-size:clamp(22px,4.2vw,32px)}.digital-shadow-animation{width:100px;height:220px}.digital-words small{font-size:14px;max-width:22ch}}
+@media(prefers-reduced-motion:reduce){html.assets-revealing #assetLoader{transition:none}html.assets-revealing body>:not(#assetLoader){animation:none}}
+
+.topbar-time{display:flex;align-items:center;gap:10px}.topbar-cup-wrap{display:flex;align-items:center;justify-content:flex-start;width:21px;height:20px;flex:none}.topbar-cup{--color-1:#fff;--color-2:rgba(255,255,255,0);--color-3:rgba(255,255,255,.3);--color-4:rgba(255,255,255,.5);--color-5:rgba(255,255,255,.6);--size:.28px;width:calc(48 * var(--size));height:calc(40 * var(--size));margin-top:0;transform:translateY(-1px);display:inline-block;position:relative;background:var(--color-1);border-radius:15% 15% 35% 35%}.topbar-cup::after{content:'';box-sizing:border-box;position:absolute;left:calc(45 * var(--size));top:calc(8 * var(--size));border:calc(4 * var(--size)) solid var(--color-1);width:calc(16 * var(--size));height:calc(20 * var(--size));border-radius:0 calc(4 * var(--size)) calc(4 * var(--size)) 0}.topbar-cup::before{content:'';position:absolute;width:calc(1 * var(--size));height:calc(10 * var(--size));color:var(--color-1);top:calc(-15 * var(--size));left:calc(11 * var(--size));box-sizing:border-box;animation:kdek-cup-steam 1s ease infinite}@keyframes kdek-cup-steam{0%{box-shadow:calc(2 * var(--size)) 0 var(--color-2),calc(12 * var(--size)) 0 var(--color-3),calc(20 * var(--size)) 0 var(--color-2)}50%{box-shadow:calc(2 * var(--size)) calc(-5 * var(--size)) var(--color-4),calc(12 * var(--size)) calc(-3 * var(--size)) var(--color-4),calc(20 * var(--size)) calc(-2 * var(--size)) var(--color-5)}100%{box-shadow:calc(2 * var(--size)) calc(-8 * var(--size)) var(--color-2),calc(12 * var(--size)) calc(-5 * var(--size)) var(--color-2),calc(20 * var(--size)) calc(-5 * var(--size)) var(--color-2)}}@media(max-width:760px){.topbar-time{gap:0}.topbar-cup{--size:.24px}.topbar-cup-wrap{width:18px}}@media(prefers-reduced-motion:reduce){.topbar-cup::before{animation:none}}
